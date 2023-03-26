@@ -26,12 +26,12 @@ public class LoginPageFunctionaltyTest extends baseLayerTestNG {
 
 	@Test(priority = 4, groups = { "logo" } )
 	public void testlogo1Display() {
-		Assert.assertFalse(new loginPage().logo1());
+		Assert.assertTrue(new loginPage().logo1());
 	}
 
 	@Test(priority = 5, groups = { "logo" })
 	public void testlogo2Display() {
-		Assert.assertFalse(new loginPage().logo2());
+		Assert.assertTrue(new loginPage().logo2());
 	}
 
 	@Test(priority = 6, dependsOnGroups = { "setup", "title", "URL" })
